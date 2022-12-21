@@ -1,9 +1,6 @@
-video {
-  width: 100%;
-}
-
 .container-projects {
-  background-image: linear-gradient(#02061E, #01020c91),  url(../assets/images/bg.jpg);
+  background-image: linear-gradient(#02061e, #01020c91),
+    url(../assets/images/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 70%;
@@ -18,7 +15,7 @@ video {
   width: 100%;
   height: 80px;
   z-index: 1;
-  background: linear-gradient(to top, rgb(3, 4, 13), transparent)
+  background: linear-gradient(to top, rgb(3, 4, 13), transparent);
 }
 
 .projects {
@@ -27,49 +24,39 @@ video {
   padding-bottom: 0;
 }
 
-.projects__project {
-  padding-bottom: 5rem;
+.button-container {
+  display: flex;
+}
+
+.btn-1 {
+  margin-right: 50px;
 }
 
 .projects__project--enginers {
   padding-bottom: 2rem;
 }
 
-.projects__laptop-mockup {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  flex: 2;
-  margin-top: 3rem;
+.projects__project {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 130px;
 }
 
-.projects__laptop-mockup img {
-  width: 100%;
-  height: 100%;
+.project-1-img {
+  width: 800px;
+  height: 450px;
 }
 
-.projects__video {
-  position: absolute;
-  width: 82.5%;
-  height: 75.5%;
-  left: 9%;
-  top: 4%;
-  border-radius: 3px;
-  overflow: hidden;
+.center-img {
+  display: flex;
+  align-items: center;
 }
-
-.projects__video video {
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-}
-
 
 .projects__info {
-  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 100px;
 }
 
 .projects__title {
@@ -89,13 +76,41 @@ video {
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 0.5rem 1rem;
-  border-radius: .3125rem;
+  border-radius: 0.3125rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   background-color: rgb(219, 212, 212);
 }
 
+@media screen and (max-width: 1380px) {
+  .projects__project {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__info {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .center-img {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .project-1-img {
+    width: 600px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .project-1-img {
+    width: 350px;
+    height: 200px;
+  }
+}
 .projects__icon {
   width: 2.5rem;
   height: 2.5rem;
@@ -155,7 +170,6 @@ video {
 .projects__info--engineers {
   flex: none !important;
 }
-
 
 .yourProject {
   background: #000000;
@@ -222,9 +236,7 @@ video {
   margin-bottom: 6rem;
 }
 
-
-@media screen and (min-width: 55rem) {
-
+/* @media screen and (min-width: 55rem) {
   .projects__project {
     display: flex;
     flex-direction: row-reverse;
@@ -252,4 +264,4 @@ video {
     flex-direction: row !important;
     margin-bottom: 2rem;
   }
-}
+} */

@@ -21,11 +21,18 @@
 }
 
 .hero__heading-background {
-  background-image: linear-gradient(to right, #c785d2af, #a66fc0bb, #855aaeb0, #65479d, #40358b);
+  background-image: linear-gradient(
+    to right,
+    #c785d2af,
+    #a66fc0bb,
+    #855aaeb0,
+    #65479d,
+    #40358b
+  );
   width: fit-content;
   padding: 9.6px 24px 0 24px;
   border-radius: 2px;
-  border: .0625rem solid gray;
+  border: 0.0625rem solid gray;
   margin-bottom: 32px;
 }
 
@@ -35,14 +42,13 @@
 
 #typed {
   font-size: 48px;
-  font-family: 'QuirkyRobot', sans-serif;
+  font-family: "QuirkyRobot", sans-serif;
 }
 
 #typed span {
   font-weight: bold;
-  font-family: 'QuirkyRobot', sans-serif;
+  font-family: "QuirkyRobot", sans-serif;
 }
-
 
 #typed .hero__fullstack {
   color: var(--primary-color);
@@ -62,12 +68,11 @@
 
 .typed-cursor {
   font-size: 28.8px;
-  font-family: 'QuirkyRobot', sans-serif;
+  font-family: "QuirkyRobot", sans-serif;
 }
 
 .hero__left {
   z-index: 5;
-
 }
 
 .hero__paragraph {
@@ -98,7 +103,8 @@
 .hero__astronaut {
   padding: 64px 0;
   max-width: 21.875rem;
-  animation: zoomIn 1s ease-in-out forwards, updown 2s linear 1s infinite alternate;
+  animation: zoomIn 1s ease-in-out forwards,
+    updown 2s linear 1s infinite alternate;
   width: 100%;
   height: 100%;
   filter: brightness(70%);
@@ -106,11 +112,11 @@
 
 @keyframes zoomIn {
   0% {
-    transform: scale(0)
+    transform: scale(0);
   }
 
   100% {
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
@@ -124,20 +130,16 @@
   }
 }
 
-
 @media screen and (min-width: 55rem) {
-
   .hero-container {
     padding-top: 144px;
     background-attachment: fixed;
-
   }
 
   .hero {
     flex-direction: row;
     padding: 0;
     justify-content: flex-end;
-    
   }
 
   .hero__left {
@@ -158,7 +160,6 @@
 }
 
 @media screen and (min-width: 75rem) {
-
   .hero-container {
     padding-top: 80px;
   }
@@ -166,5 +167,4 @@
   .hero {
     padding: 0 !important;
   }
-
 }

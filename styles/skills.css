@@ -1,8 +1,13 @@
 .container-skills {
-  background: -webkit-linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
-  background: linear-gradient(to bottom, rgb(3, 4, 13), #080E2D);
+  background: -webkit-linear-gradient(to top, rgb(3, 4, 13), #080e2d);
+  background: linear-gradient(to top, rgb(3, 4, 13), #080e2d);
 }
 
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 300px;
+}
 
 .skills {
   display: flex;
@@ -13,9 +18,98 @@
   position: relative;
 }
 
-.skill {
-  flex: 1;
+.skill-header {
+  text-align: center;
 }
+
+.skill-item-container-sub-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+}
+
+.skill-item-container-1 {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon-img {
+  height: 100px;
+  width: 100px;
+  animation: anime 1s infinite ease-in-out alternate;
+  -webkit-animation: anime 1s infinite ease-in-out alternate;
+  animation-delay: 0.3s;
+}
+
+@keyframes anime {
+  100% {
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+  }
+}
+
+.skill-item {
+  text-align: center;
+}
+
+.icon-skill-container-1 {
+  height: 700px;
+  width: 600px;
+}
+
+.icon-skill-container-2 {
+  height: 700px;
+  width: 600px;
+}
+
+@media screen and (max-width: 1380px) {
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .skill-item-container-sub-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .skill-header {
+    margin-top: 70px;
+  }
+
+  .skill-item {
+    margin-left: 60px;
+  }
+  .icon-skill-container-1 {
+    width: 400px;
+  }
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    width: 100px;
+  }
+  .icon-skill-container-2 {
+    width: 400px;
+  }
+  .skill-item-container-1 {
+    width: 100%;
+  }
+}
+
+/* IGNORE BELOW THIS LINE */
 
 .skills__heading2 {
   position: absolute;
@@ -41,7 +135,7 @@
   height: 40px;
   border-radius: 50%;
   background: #fff;
-  box-shadow: 0 0 50px #FFEB00;
+  box-shadow: 0 0 50px #ffeb00;
 }
 
 .skills-circle {
@@ -114,7 +208,6 @@
   transition: 1s all;
 }
 
-
 .skill-orbit:nth-child(1) .skill-planet {
   -webkit-animation: travelOrbit 12s infinite linear;
   animation: travelOrbit 12s infinite linear;
@@ -129,15 +222,12 @@
   transform-origin: 50% 420%;
 }
 
-
 .skill-orbit:nth-child(3) .skill-planet {
   -webkit-animation: travelOrbit 8s infinite linear;
   animation: travelOrbit 8s infinite linear;
   -webkit-transform-origin: 50% 350%;
   transform-origin: 50% 350%;
 }
-
-
 
 .skill-orbit:nth-child(4) .skill-planet {
   -webkit-animation: travelOrbit 6s infinite linear;
@@ -173,13 +263,11 @@
   }
 }
 
-
 .skills__icon {
   width: 30px;
   height: 30px;
   object-fit: cover;
 }
-
 
 /* Skills-bar */
 @keyframes grow-90 {
@@ -191,8 +279,6 @@
   }
 }
 
-
-
 @keyframes grow-75 {
   from {
     right: 100%;
@@ -202,7 +288,6 @@
   }
 }
 
-
 @keyframes grow-50 {
   from {
     right: 100%;
@@ -211,7 +296,6 @@
     right: 50%;
   }
 }
-
 
 #skills__bar {
   margin: 6.25rem auto 0 auto;
@@ -232,7 +316,7 @@
   position: relative;
   text-align: right;
   z-index: 2;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: normal;
 }
 
@@ -324,7 +408,6 @@
   right: 50%;
 }
 
-
 @media screen and (min-width: 37.5rem) {
   .skills-circle-wrap {
     width: 400px;
@@ -341,12 +424,10 @@
     transform-origin: 50% 590%;
   }
 
-
   .skill-orbit:nth-child(3) .skill-planet {
     -webkit-transform-origin: 50% 480%;
     transform-origin: 50% 480%;
   }
-
 
   .skill-orbit:nth-child(4) .skill-planet {
     -webkit-transform-origin: 50% 370%;
@@ -357,10 +438,7 @@
     -webkit-transform-origin: 50% 240%;
     transform-origin: 50% 240%;
   }
-
 }
-
-
 
 @media screen and (min-width: 55rem) {
   .skills-circle-wrap {
@@ -383,12 +461,10 @@
     transform-origin: 50% 880%;
   }
 
-
   .skill-orbit:nth-child(3) .skill-planet {
     -webkit-transform-origin: 50% 710%;
     transform-origin: 50% 710%;
   }
-
 
   .skill-orbit:nth-child(4) .skill-planet {
     -webkit-transform-origin: 50% 530%;
@@ -399,5 +475,4 @@
     -webkit-transform-origin: 50% 340%;
     transform-origin: 50% 340%;
   }
-
 }
